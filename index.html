@@ -17,12 +17,27 @@
         color: purple;
         border: 1px solid red;
       }
+      #exec-bio {
+        background-color: lightgray;
+      }
+      .bio-box{
+        border: 1px solid darkgreen;
+      }
+      .bio-box a {
+        color: slateblue;
+      }
+      #practiceId1 {
+        background-color: orange;
+      }
+      .practiceClass{
+        background-color: azure;
+      }
     </style>
   </head>
   <body>
     <h1>I'm an h1</h1>
     <ul>
-      <li>
+      <li id="practiceId1">
         <a href="https://example.com/">Link</a>
       </li>
       <li>
@@ -33,16 +48,17 @@
       </li>
     </ul>
     <h2>I'm an h2</h2>
-    <div>
+    <div id="exec-bio" class="bio-box practiceClass">
+      <a href="https://example.com/">I'm a link</a><br>
+      ※idセレクタはclassセレクタより優先されるので、背景色がexec-bioのlightgrayになる。
+    </div>
+    <div class="bio-box practiceClass">
       <a href="https://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box practiceClass">
       <a href="https://example.com/">I'm a link</a>
     </div>
-    <div>
-      <a href="https://example.com/">I'm a link</a>
-    </div>
-    <div>
+    <div class="bio-box practiceClass">
       <a href="https://example.com/">I'm a link</a>
     </div>
   </body>
