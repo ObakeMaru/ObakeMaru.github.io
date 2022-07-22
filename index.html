@@ -5,8 +5,26 @@
     <meta charset="utf-8">
     <style>
       /* グローバルスタイル */
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 62.5%;
+      }
+      h1 {
+        /* font-size: 7vw; */
+        font-size: 2em;
+        margin-top: 0;
+      }
       a{
         color: #f00;
+      }
+      /* ヒーロースタイル */
+      .full-hero {
+        background-color: #c7dbfc;
+        /* height: 50vw;
+        width: 50vw; */
       }
       /* SNSスタイル */
       .social-link {
@@ -15,11 +33,11 @@
       }
       /* バイオグラフィースタイル */
       .bio-wrapper {
-        font-size: 24px;
+        /* font-size: 24px; */
       }
       .bio-box {
         border: 1px solid black;
-        font-size: 1rem;
+        font-size: 1em;
         width: 50%;
       }
       .bio-box h3 {
@@ -34,20 +52,20 @@
     </style>
   </head>
   <body>
-    <div>I'm a percent test</div>
-      
-    <h1>I'm an h1</h1>
-    <ul>
-      <li>
-        <a href="https://example.com/" class="social-link">Link</a>
-      </li>
-      <li>
-        <a href="https://example.com/">Link</a>
-      </li>
-      <li>
-        <a href="https://example.com/">Link</a>
-      </li>
-    </ul>
+    <div class="full-hero hero-home">
+      <h1>I'm an h1</h1>
+      <ul>
+        <li>
+          <a href="https://example.com/" class="social-link">Link</a>
+        </li>
+        <li>
+          <a href="https://example.com/">Link</a>
+        </li>
+        <li>
+          <a href="https://example.com/">Link</a>
+        </li>
+      </ul>
+    </div>     
     <h2>I'm an h2</h2>
     <div class="bio-wrapper">
     <div class="bio-box">
