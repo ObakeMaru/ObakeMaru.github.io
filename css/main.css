@@ -135,7 +135,6 @@ h2 ~ p {
 }
 .col-two {
   display: flex;
-  /* flex-direction: column; */
 }
 .col-two .col-aside {
   flex: 0 0 20em;
@@ -498,14 +497,19 @@ h2 ~ p {
   .post-aside {
     display: none;
   }
-
-  .blog-recent {
-    display: none;
+  .blog-cols {
+    display: flex;
+    flex-direction: column;
   }
-  .blog-previews {
+  .blog-cols .blog-recent {
+    /* display: none;*/
+    flex: 1;  
+    order: 0;
+  }
+  .blog-cols .blog-previews {
     padding: 0;
+    flex: 1;
   }
-
   /* ギャラリースタイル */
   .gallery {
     flex-direction: column;
