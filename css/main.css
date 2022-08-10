@@ -672,8 +672,10 @@ h2 ~ p {
     background-color: #444;
     box-sizing: border-box;
     left: 0;
-    opacity: 0;
-    visibility: hidden;
+
+width: 0;
+height: 0;
+
     overflow: hidden;
     padding: 0;
     position: absolute;
@@ -691,7 +693,7 @@ h2 ~ p {
     align-items: center;
   }
   .header-nav li ~ li {
-    height: 22.5vh;  
+    height: 22.5vh;
   }
   .header-nav li:last-child {
     margin-bottom: 1em;
@@ -708,8 +710,7 @@ h2 ~ p {
     padding-right: 0;
   }
   .mobile-menu-check:checked ~ .header-nav {
-    opacity: 1;
-    visibility: visible;
+    width: 100vw;
     height: 90vh;
   }
   .mobile-menu-check:checked ~ .show-mobile-menu:after {
