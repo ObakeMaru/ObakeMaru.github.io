@@ -672,10 +672,7 @@ h2 ~ p {
     background-color: #444;
     box-sizing: border-box;
     left: 0;
-
-width: 0;
-height: 0;
-
+    max-height: 0;
     overflow: hidden;
     padding: 0;
     position: absolute;
@@ -687,13 +684,11 @@ height: 0;
   }
   .header-nav li {
     display: block;
-    height: 22.5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 1em;
   }
   .header-nav li ~ li {
-    height: 22.5vh;
+    border: 0;
+    padding: 0;
   }
   .header-nav li:last-child {
     margin-bottom: 1em;
@@ -710,8 +705,7 @@ height: 0;
     padding-right: 0;
   }
   .mobile-menu-check:checked ~ .header-nav {
-    width: 100vw;
-    height: 90vh;
+    max-height: 1000px;
   }
   .mobile-menu-check:checked ~ .show-mobile-menu:after {
     background-color: #000;
